@@ -58,6 +58,7 @@ include $(srcdir)/../../texk/am/script_links.am
 install-data-hook: install-perl-links
 
 install-exec-hook:
+	$(INSTALL) -d $(DESTDIR)$(bindir)
 if CLISP_RUNTIME
 	$(INSTALL_PROGRAM_ENV) $(INSTALL_PROGRAM) "$(LISP_RUN)" "$(DESTDIR)$(bindir)/$(XINDY_RUN)"
 endif CLISP_RUNTIME
