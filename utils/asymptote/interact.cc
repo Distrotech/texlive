@@ -13,6 +13,7 @@
 #include <unistd.h>
 #include <csignal>
 #include <cstdio>
+#include <cstring>
 
 #include "interact.h"
 #include "runhistory.h"
